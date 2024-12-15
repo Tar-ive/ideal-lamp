@@ -1,4 +1,4 @@
-// File: /Users/tarive/skip_v1/app/page.tsx
+// File: /Users/tarive/skip-v2/skip.v1/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

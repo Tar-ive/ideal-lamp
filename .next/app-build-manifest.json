@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/blood/v1/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/blood/v1/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,20 +11,35 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/v1/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/v1/page.js"
+      "static/chunks/app/page.js"
     ],
-    "/v2/page": [
+    "/blood/v3/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/v2/page.js"
+      "static/chunks/app/blood/v3/page.js"
     ],
-    "/v3/page": [
+    "/cholesterol/v1/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/v3/page.js"
+      "static/chunks/app/cholesterol/v1/page.js"
+    ],
+    "/cholesterol/v2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/cholesterol/v2/page.js"
+    ],
+    "/cholesterol/v3/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/cholesterol/v3/page.js"
+    ],
+    "/blood/v2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blood/v2/page.js"
     ]
   }
 }

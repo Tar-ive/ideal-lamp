@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export const SkeletonLoader = () => {
+export const SkeletonLoader: React.FC = () => {
   return (
     <div className="space-y-6">
       <div className="space-y-4">

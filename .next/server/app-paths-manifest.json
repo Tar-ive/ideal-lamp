@@ -1,9 +1,7 @@
 {
-  "/page": "app/page.js",
-  "/cholesterol/v1/page": "app/cholesterol/v1/page.js",
   "/blood/v1/page": "app/blood/v1/page.js",
-  "/blood/v2/page": "app/blood/v2/page.js",
   "/blood/v3/page": "app/blood/v3/page.js",
+  "/blood/v2/page": "app/blood/v2/page.js",
   "/cholesterol/v2/page": "app/cholesterol/v2/page.js",
   "/cholesterol/v3/page": "app/cholesterol/v3/page.js"
 }

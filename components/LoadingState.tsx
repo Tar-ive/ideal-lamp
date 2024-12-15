@@ -24,10 +24,10 @@ const LoadingState: React.FC<LoadingStateProps> = ({ version, onLoadingComplete 
   }, [startLoading]);
 
   return (
-    <div className="space-y-6">
+    <div className="w-full max-w-md mx-auto space-y-6">
       <div className="space-y-4">
         {version === 'v3' && (
-          <p className="text-gray-700">Analyzing lab results...</p>
+          <p className="text-gray-700 text-center">Analyzing lab results...</p>
         )}
         <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
           <motion.div
@@ -43,7 +43,7 @@ const LoadingState: React.FC<LoadingStateProps> = ({ version, onLoadingComplete 
           {[1, 2, 3, 4].map((i) => (
             <div
               key={i}
-              className="h-16 rounded-lg bg-gradient-to-r from-gray-400 to-gray-100 animate-pulse"
+              className="h-16 w-full rounded-lg bg-gradient-to-r from-gray-300 to-gray-100 animate-pulse"
             />
           ))}
         </div>

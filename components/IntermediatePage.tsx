@@ -29,33 +29,31 @@ const IntermediatePage: React.FC<IntermediatePageProps> = ({ title, version, chi
   }, []);
 
   return (
-    <main className="min-h-screen bg-white flex flex-col">
-      <div className="flex-grow flex items-center justify-center p-4">
-        <div className="w-full max-w-3xl">
-          <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">{title}</h1>
+    <main className="min-h-screen bg-white flex flex-col items-center justify-center p-4">
+      <div className="w-full max-w-3xl">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">{title}</h1>
+        <div className="w-full flex flex-col items-center">
           {showResults ? (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
+              className="w-full"
             >
               <ResultsDisplay>{children}</ResultsDisplay>
             </motion.div>
           ) : loading ? (
-            <LoadingState version={version} onLoadingComplete={handleLoadingComplete} />
-          ) : null}
+            <LoadingState version={version as 'v2' | 'v3'} onLoadingComplete={handleLoadingComplete} />
+          ) : (
+            <button
+              onClick={handleViewResults}
+              className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition-colors text-lg"
+            >
+              View Lab Results
+            </button>
+          )}
         </div>
       </div>
-      {!showResults && !loading && (
-        <div className="p-4">
-          <button
-            onClick={handleViewResults}
-            className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors text-lg"
-          >
-            View Lab Results
-          </button>
-        </div>
-      )}
     </main>
   );
 };

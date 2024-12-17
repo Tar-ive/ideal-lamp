@@ -33,7 +33,7 @@ const IntermediatePage: React.FC<IntermediatePageProps> = ({ title, version, tes
     <main className="min-h-screen bg-white flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          {testType === 'lipid' ? 'Lipid Panel Results' : 'Blood Count Results'}
+          {testType === 'lipid' ? 'Lipid Panel Results' : 'Blood Panel Results'}
         </h1>
         <div className="w-full flex flex-col items-center">
           {showResults ? (

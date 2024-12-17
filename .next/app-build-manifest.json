@@ -10,36 +10,6 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/cholesterol/v1/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cholesterol/v1/page.js"
-    ],
-    "/cholesterol/v2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cholesterol/v2/page.js"
-    ],
-    "/cholesterol/v3/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cholesterol/v3/page.js"
-    ],
-    "/blood/v1/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blood/v1/page.js"
-    ],
-    "/blood/v2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blood/v2/page.js"
-    ],
-    "/blood/v3/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blood/v3/page.js"
     ]
   }
 }

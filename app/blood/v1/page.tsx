@@ -5,7 +5,7 @@ import BloodCountPanel from '../../../components/BloodCountPanel';
 
 export default function BloodV1() {
   return (
-    <IntermediatePage title="Blood Count Results" version="v1">
+    <IntermediatePage title="Blood Panel Results" version="v1">
       <BloodCountPanel />
     </IntermediatePage>
   );

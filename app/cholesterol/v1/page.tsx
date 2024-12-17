@@ -3,9 +3,9 @@
 import IntermediatePage from '../../../components/IntermediatePage';
 import LipidPanel from '../../../components/LipidPanel';
 
-export default function CholesterolV1() {
+export default function LipidPanelV1() {
   return (
-    <IntermediatePage title="Cholesterol Results" version="v1">
+    <IntermediatePage title="Lipid Panel Results" version="v1" testType="lipid">
       <LipidPanel />
     </IntermediatePage>
   );

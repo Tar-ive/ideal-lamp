@@ -8,10 +8,11 @@ import ResultsDisplay from './ResultsDisplay';
 interface IntermediatePageProps {
   title: string;
   version: 'v1' | 'v2' | 'v3';
+  testType: 'lipid' | 'blood';
   children: React.ReactNode;
 }
 
-const IntermediatePage: React.FC<IntermediatePageProps> = ({ title, version, children }) => {
+const IntermediatePage: React.FC<IntermediatePageProps> = ({ title, version, testType, children }) => {
   const [showResults, setShowResults] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -31,7 +32,9 @@ const IntermediatePage: React.FC<IntermediatePageProps> = ({ title, version, chi
   return (
     <main className="min-h-screen bg-white flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-3xl">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">{title}</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
+          {testType === 'lipid' ? 'Lipid Panel Results' : 'Blood Count Results'}
+        </h1>
         <div className="w-full flex flex-col items-center">
           {showResults ? (
             <motion.div
@@ -43,7 +46,7 @@ const IntermediatePage: React.FC<IntermediatePageProps> = ({ title, version, chi
               <ResultsDisplay>{children}</ResultsDisplay>
             </motion.div>
           ) : loading ? (
-            <LoadingState version={version as 'v2' | 'v3'} onLoadingComplete={handleLoadingComplete} />
+            <LoadingState version={version as 'v2' | 'v3'} onLoadingComplete={handleLoadingComplete} testType={testType} />
           ) : (
             <button
               onClick={handleViewResults}

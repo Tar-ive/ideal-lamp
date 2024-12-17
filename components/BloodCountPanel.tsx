@@ -10,7 +10,6 @@ const bloodCountPanelData = [
 const BloodCountPanel: React.FC = () => {
   return (
     <div className="space-y-6 md:space-y-8">
-      <h2 className="text-lg md:text-xl font-bold mb-4 md:mb-6">Blood Count Panel</h2>
       {bloodCountPanelData.map((result, index) => (
         <ResultSlider key={index} {...result} />
       ))}

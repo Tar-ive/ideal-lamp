@@ -19,7 +19,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-center">Blood Panel Results</h2>
+            <h2 className="text-2xl font-bold text-center">Blood Count Results</h2>
             <Link href="/blood/v1" className="block w-full py-3 bg-blue-500 text-white text-center rounded-lg hover:bg-blue-600 transition-colors text-lg">
               Version 1
             </Link>
